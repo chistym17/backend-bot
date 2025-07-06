@@ -1,4 +1,15 @@
-from pipecat.tools import Tool, ToolCallResult
+from typing import Any, Dict
+
+class Tool:
+    def __init__(self, name: str, description: str, parameters: Dict[str, Any]):
+        self.name = name
+        self.description = description
+        self.parameters = parameters
+
+class ToolCallResult:
+    def __init__(self, result: Any):
+        self.result = result
+
 
 
 class FormFillingTool(Tool):
