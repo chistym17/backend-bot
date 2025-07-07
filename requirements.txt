@@ -3,4 +3,4 @@ uvicorn
 pipecat-ai
 python-dotenv
 websockets
-pipecat-ai[google]
+pipecat-ai[google,daily,silero]
